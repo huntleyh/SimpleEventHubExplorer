@@ -33,7 +33,7 @@ namespace SimpleExplorer
 
         public override void WriteLine(string message)
         {
-            Write(DateTime.Now.ToShortTimeString() + ": "+ message + Environment.NewLine);
+            Write(DateTime.Now.ToLongTimeString() + ": "+ message + Environment.NewLine);
         }
 
         //override & edit TraceEvent method to control what is logged to textbox;
